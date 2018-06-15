@@ -4,6 +4,7 @@
 #include "qamqptable.h"
 #include "qamqpexchange.h"
 #include "qamqpchannel_p.h"
+// clazy:skip
 
 class QAmqpExchangePrivate: public QAmqpChannelPrivate
 {

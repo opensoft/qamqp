@@ -21,6 +21,7 @@
 #include <QVariantHash>
 
 #include "qamqpglobal.h"
+// clazy:skip
 
 class QAMQP_EXPORT QAmqpTable : public QVariantHash
 {

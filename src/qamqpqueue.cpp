@@ -10,6 +10,7 @@
 #include "qamqpexchange.h"
 #include "qamqpmessage_p.h"
 #include "qamqptable.h"
+// clazy:skip
 using namespace QAMQP;
 
 QAmqpQueuePrivate::QAmqpQueuePrivate(QAmqpQueue *q)

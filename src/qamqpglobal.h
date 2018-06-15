@@ -19,6 +19,7 @@
 #define QAMQPGLOBAL_H
 
 #include <QMetaType>
+// clazy:skip
 
 #define AMQP_SCHEME             "amqp"
 #define AMQP_SSL_SCHEME         "amqps"

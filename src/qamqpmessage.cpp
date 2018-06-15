@@ -2,6 +2,7 @@
 
 #include "qamqpmessage.h"
 #include "qamqpmessage_p.h"
+// clazy:skip
 
 QAmqpMessagePrivate::QAmqpMessagePrivate()
     : deliveryTag(0),

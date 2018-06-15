@@ -4,6 +4,7 @@
 #include <QPointer>
 #include "qamqpframe_p.h"
 #include "qamqptable.h"
+// clazy:skip
 
 #define METHOD_ID_ENUM(name, id) name = id, name ## Ok
 

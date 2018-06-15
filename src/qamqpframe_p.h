@@ -8,6 +8,7 @@
 
 #include "qamqpglobal.h"
 #include "qamqpmessage.h"
+// clazy:skip
 
 class QAmqpFramePrivate;
 class QAmqpFrame

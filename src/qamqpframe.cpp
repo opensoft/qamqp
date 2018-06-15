@@ -5,6 +5,7 @@
 #include "qamqptable.h"
 #include "qamqpglobal.h"
 #include "qamqpframe_p.h"
+// clazy:skip
 
 QReadWriteLock QAmqpFrame::lock_;
 int QAmqpFrame::writeTimeout_ = 1000;
@@ -73,7 +74,7 @@ QDataStream &operator<<(QDataStream &stream, const QAmqpFrame &frame)
 
     // write end
     stream << qint8(QAmqpFrame::FRAME_END);
-    
+
     int writeTimeout = QAmqpFrame::writeTimeout();
     if(writeTimeout >= -1)
     {

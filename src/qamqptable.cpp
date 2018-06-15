@@ -5,6 +5,7 @@
 
 #include "qamqpframe_p.h"
 #include "qamqptable.h"
+// clazy:skip
 
 /*
  * field value types according to: https://www.rabbitmq.com/amqp-0-9-1-errata.html

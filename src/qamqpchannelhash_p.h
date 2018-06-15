@@ -22,6 +22,7 @@
 #include <QString>
 #include <QStringList>
 #include <QObject>
+// clazy:skip
 
 /* Forward declarations */
 class QAmqpChannel;

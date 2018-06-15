@@ -12,6 +12,7 @@
 #include "qamqpauthenticator.h"
 #include "qamqptable.h"
 #include "qamqpframe_p.h"
+// clazy:skip
 
 #define METHOD_ID_ENUM(name, id) name = id, name ## Ok
 

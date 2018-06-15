@@ -22,6 +22,7 @@
 #include <QDataStream>
 
 #include "qamqpglobal.h"
+// clazy:skip
 
 class QAMQP_EXPORT QAmqpAuthenticator
 {

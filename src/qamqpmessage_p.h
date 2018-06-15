@@ -6,6 +6,7 @@
 
 #include "qamqpframe_p.h"
 #include "qamqpmessage.h"
+// clazy:skip
 
 class QAmqpMessagePrivate : public QSharedData
 {

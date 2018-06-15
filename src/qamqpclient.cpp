@@ -13,6 +13,7 @@
 #include "qamqptable.h"
 #include "qamqpclient_p.h"
 #include "qamqpclient.h"
+// clazy:skip
 
 QAmqpClientPrivate::QAmqpClientPrivate(QAmqpClient *q)
     : port(AMQP_PORT),
@@ -240,7 +241,7 @@ void QAmqpClientPrivate::_q_socketError(QAbstractSocket::SocketError error)
 void QAmqpClientPrivate::_q_readyRead()
 {
     Q_Q(QAmqpClient);
-    
+
     while (socket->bytesAvailable() >= QAmqpFrame::HEADER_SIZE) {
         unsigned char headerData[QAmqpFrame::HEADER_SIZE];
         socket->peek((char*)headerData, QAmqpFrame::HEADER_SIZE);

@@ -18,6 +18,7 @@
 #include "qamqpqueue.h"
 #include "qamqpexchange.h"
 #include "qamqpchannelhash_p.h"
+// clazy:skip
 
 /*!
 * Retrieve a pointer to the named channel.

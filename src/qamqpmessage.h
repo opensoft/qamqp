@@ -24,6 +24,7 @@
 #include <QVariant>
 
 #include "qamqpglobal.h"
+// clazy:skip
 
 class QAmqpMessagePrivate;
 class QAMQP_EXPORT QAmqpMessage

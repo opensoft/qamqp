@@ -20,6 +20,7 @@
 
 #include <QObject>
 #include "qamqpglobal.h"
+// clazy:skip
 
 class QAmqpClient;
 class QAmqpChannelPrivate;

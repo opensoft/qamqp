@@ -5,6 +5,7 @@
 #include <QStringList>
 
 #include "qamqpchannel_p.h"
+// clazy:skip
 
 class QAmqpQueuePrivate: public QAmqpChannelPrivate,
                          public QAmqpContentFrameHandler,

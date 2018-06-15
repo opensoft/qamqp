@@ -8,6 +8,7 @@
 #include "qamqpqueue.h"
 #include "qamqpglobal.h"
 #include "qamqpclient.h"
+// clazy:skip
 
 QString QAmqpExchangePrivate::typeToString(QAmqpExchange::ExchangeType type)
 {

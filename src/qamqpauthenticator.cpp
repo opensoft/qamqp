@@ -1,6 +1,7 @@
 #include "qamqptable.h"
 #include "qamqpframe_p.h"
 #include "qamqpauthenticator.h"
+// clazy:skip
 
 QAmqpPlainAuthenticator::QAmqpPlainAuthenticator(const QString &l, const QString &p)
     : login_(l),

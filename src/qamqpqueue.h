@@ -24,6 +24,7 @@
 #include "qamqpmessage.h"
 #include "qamqpglobal.h"
 #include "qamqptable.h"
+// clazy:skip
 
 class QAmqpClient;
 class QAmqpClientPrivate;

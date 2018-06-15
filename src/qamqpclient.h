@@ -25,6 +25,7 @@
 #include <QSslError>
 
 #include "qamqpglobal.h"
+// clazy:skip
 
 class QAmqpExchange;
 class QAmqpQueue;
@@ -118,7 +119,7 @@ Q_SIGNALS:
     void socketError(QAbstractSocket::SocketError error);
     void socketStateChanged(QAbstractSocket::SocketState state);
     void sslErrors(const QList<QSslError> &errors);
-    
+
 public Q_SLOTS:
     void ignoreSslErrors(const QList<QSslError> &errors);
 

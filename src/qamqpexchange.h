@@ -21,6 +21,7 @@
 #include "qamqptable.h"
 #include "qamqpchannel.h"
 #include "qamqpmessage.h"
+// clazy:skip
 
 class QAmqpClient;
 class QAmqpQueue;
