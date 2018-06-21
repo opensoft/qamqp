@@ -4,3 +4,14 @@
 /Debug
 /GeneratedFiles
 build
+
+# MSVC files
+Debug
+Release
+.vs
+*.vcxproj*
+*.sln
+*_resource.rc
+*ts_files.list
+*.VC.*
+*.db
