@@ -4,7 +4,11 @@ project(QAMQP VERSION 0.5.0 LANGUAGES CXX)
 find_package(Qt5Core CONFIG REQUIRED)
 find_package(Qt5Network CONFIG REQUIRED)
 
-execute_process(COMMAND git describe --long --dirty --tags OUTPUT_VARIABLE QAMQP_GIT_VERSION OUTPUT_STRIP_TRAILING_WHITESPACE)
+execute_process(COMMAND git describe --long --dirty --tags
+    WORKING_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}
+    OUTPUT_VARIABLE QAMQP_GIT_VERSION
+    OUTPUT_STRIP_TRAILING_WHITESPACE
+)
 
 set(SOURCE_FILES
     src/qamqpauthenticator.cpp
