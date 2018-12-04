@@ -76,6 +76,7 @@ install(TARGETS qamqp
     EXPORT qamqp-targets
     RUNTIME DESTINATION lib
     LIBRARY DESTINATION lib
+    ARCHIVE DESTINATION lib
 )
 
 install(EXPORT qamqp-targets DESTINATION lib/cmake/3rdparty
