@@ -43,7 +43,11 @@ set(PRIVATE_HEADERS
     src/qamqpqueue_p.h
 )
 
-add_library(qamqp SHARED ${SOURCE_FILES} ${PUBLIC_HEADERS} ${PRIVATE_HEADERS})
+if (PROOF_CLANG_TIDY)
+    add_library(qamqp SHARED ${PUBLIC_HEADERS})
+else()
+    add_library(qamqp SHARED ${SOURCE_FILES} ${PUBLIC_HEADERS} ${PRIVATE_HEADERS})
+endif()
 
 target_compile_definitions(qamqp
     PUBLIC QAMQP_SHARED
@@ -60,8 +64,7 @@ set_target_properties(qamqp PROPERTIES
     AUTOMOC ON
 )
 
-target_include_directories(qamqp
-    PUBLIC
+target_include_directories(qamqp SYSTEM PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}>
     $<INSTALL_INTERFACE:include>
 )
